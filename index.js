@@ -30,6 +30,8 @@ app.get('/:color', (req, res)=>{
     `)
 })
 
+app.use('/more', require('./controllers/more'))
+
 // app.get('/crimson', (req, res)=>{
 //     res.send (`
 //     <body style="margin:0;">
